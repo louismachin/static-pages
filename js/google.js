@@ -1,0 +1,2 @@
+const API_KEY = 'AIzaSyAICerXSZqFJGsRF1IGNj1hPuLIAosT5Ys';
+const PLACE_ID = 'ChIJT6NEHGpzdEgRejZjKd-yH8c';

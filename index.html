@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="./css/photo_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reviews.css" />
+    <script src="./js/google.js"></script>
+    <script src="./js/google_drive.js"></script>
+    <script src="./js/google_maps.js"></script>
+</head>
+
+<body class="grid">
+    <div id="header-left"></div>
+    <div id="header">
+        <img id="logo">
+    </div>
+    <div id="header-right"></div>
+    <div id="ribbon-left"></div>
+    <div id="ribbon">
+        <div id="buttons">
+            <span>
+                <img src="svg/phone.svg" style="margin-top: 4px;"><a href="tel:02380251631">023 8025 1631</a>
+            </span>
+            <span>
+                <img src="svg/car.svg"><a href="https://maps.app.goo.gl/XMkHvTF3FL42eLNC7">Find us!</a>
+            </span>
+            <span>
+                <img src="svg/menu.svg"><a href="/">Menu</a>
+            </span>
+        </div>
+    </div>
+    <div id="ribbon-right"></div>
+    <div id="content-left"></div>
+    <div id="content">
+        <h1 class="blue">Fresh, Fast & Friendly!</h1>
+        <p>Start your day right with our delicious breakfast, or grab a satisfying lunch made fresh just for you. We’re all about great food, quick service, and a welcoming atmosphere.</p>
+        <div id="photo-gallery"></div>
+        <h1 class="blue">Corporate Lunches!</h1>
+        <p>From morning meetings to team lunches, we’ve got your office covered. Enjoy fresh, homemade meals delivered straight to your workplace—no hassle, just great food.</p>
+        <h1 class="blue">Our Reviews!</h1>
+        <div id="google-reviews"></div>
+    </div>
+    <div id="content-right"></div>
+    <div id="footer-left"></div>
+    <div id="footer">
+        <a href="https://maps.app.goo.gl/XMkHvTF3FL42eLNC7">
+            <p>13A Bournemouth Road,<br>Chandler's Ford, Eastleigh,<br>SO53 3DA</p>
+        </a>
+    </div>
+    <div id="footer-right"></div>
+</body>
+
+<script>
+    loadPhotoGallery();
+    loadPhoto('logo.jpg', 'logo');
+</script>

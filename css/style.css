@@ -1,0 +1,69 @@
+/* Oswald Demi-Bold */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+body {
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    max-height: 100%;
+}
+
+h1 {
+    font-family: 'Oswald';
+}
+
+h1.blue {
+    background-color: #1B254F;
+    color: #F1F1F1;
+    padding: 4px 16px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#content p {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 8px !important;
+    width: 80%;
+}
+
+#ribbon span {
+    display: flex;
+    font-family: 'Oswald';
+    background-color: #F1F1F1;
+    color: #1B254F;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 1.6rem;
+    margin: 8px 8px;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+#ribbon #buttons {
+    display: flex;
+    align-items: center;
+}
+
+#ribbon #buttons img {
+    height: 32px;
+    margin-right: 12px;
+}
