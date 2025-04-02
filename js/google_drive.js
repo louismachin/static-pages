@@ -6,9 +6,12 @@ function fetchGoogleDriveFile(folder_id, file_name) {
             const data = await response.json();
             if (data.files) {
                 data.files.forEach(file => {
+                    console.log(file);
                     if (file.name == file_name) {
                         if (file.mimeType.startsWith('image/')) {
                             resolve(`https://drive.google.com/thumbnail?id=${file.id}&sz=w1000`);
+                        } else if (file.mimeType.startsWith('application/pdf')) {
+                            resolve(`https://drive.google.com/file/d/${file.id}/view`);
                         } else {
                             console.log('Unsupported file type: ', file.mimeType);
                             resolve(null);
@@ -63,5 +66,15 @@ function loadPhoto(file_name, dom_id) {
     fetchGoogleDriveFile(folder_id, file_name).then(url => {
         console.log(url)
         document.getElementById(dom_id).src = url;
+    })
+}
+
+function loadMenu() {
+    let folder_id = '1ZamP8zVV8LO_MdTLz0Kg0nJPh5aVXYST';
+    let file_name = 'menu.pdf';
+    let dom_id = 'menu-btn';
+    fetchGoogleDriveFile(folder_id, file_name).then(url => {
+        console.log(url)
+        document.getElementById(dom_id).href = url;
     })
 }
