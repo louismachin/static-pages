@@ -2,10 +2,11 @@
 body.grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 320px 80px 1fr min-content;
+    grid-template-rows: 320px min-content 80px 1fr min-content;
     min-height: 100svh;
     grid-template-areas:
         "header-left  header  header-right"
+        "message-left  message  message-right"
         "ribbon-left  ribbon  ribbon-right"
         "content-left content content-right"
         "footer-left  footer  footer-right";
@@ -47,6 +48,24 @@ body.grid {
 .grid #ribbon-right {
     grid-area: ribbon-right;
     background-color: #1B254F;
+}
+
+.grid #message {
+    grid-area: message;
+    background-color: #f46c6c;
+    justify-content: center;
+    align-items: center;
+    color: #F1F1F1;
+}
+
+.grid #message-left {
+    grid-area: message-left;
+    background-color: #f46c6c;
+}
+
+.grid #message-right {
+    grid-area: message-right;
+    background-color: #f46c6c;
 }
 
 .grid #content {

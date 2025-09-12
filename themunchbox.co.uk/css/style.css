@@ -45,6 +45,11 @@ a {
     width: 80%;
 }
 
+#message span {
+    font-family: 'Oswald';
+    font-size: 1.6rem;
+}
+
 #ribbon span {
     display: flex;
     font-family: 'Oswald';
