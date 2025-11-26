@@ -1,8 +1,6 @@
 /* Oswald Demi-Bold */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-
-
 body {
     margin: 0;
 }
@@ -15,6 +13,10 @@ body {
 
 #logo {
     max-height: 100%;
+}
+
+span.center {
+    text-align: center;
 }
 
 h1 {
