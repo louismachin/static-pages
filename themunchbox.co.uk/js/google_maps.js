@@ -31,7 +31,7 @@ const reviews = [
     {
         rating: 5,
         author_name: "Danni Ware",
-        text: "Dawn and her team supplied the food for our wedding In late August 2025 and I couldn’t recommend them enough! Food was amazing, such a brilliant selection and the service and layout was beautiful and I’m so greatful for everything they did. Thank you Dawn we are forever grateful! 🤍🤍🤍",
+        text: "Dawn and her team supplied the food for our wedding In late August 2025 and I couldn't recommend them enough! Food was amazing, such a brilliant selection and the service and layout was beautiful and I'm so greatful for everything they did. Thank you Dawn we are forever grateful! 🤍🤍🤍",
         date: "2025-09-15"
     },
     {
