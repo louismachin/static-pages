@@ -53,7 +53,7 @@ function displayReviews() {
     reviews.forEach(review => {
         if (review.rating === 5 && review.text.length < 400) {
             const span = document.createElement('span');
-            span.innerHTML = `⭐⭐⭐⭐⭐ — "${review.text}" — ${review.author_name}`;
+            span.innerHTML = `&starf;&starf;&starf;&starf;&starf; &mdash; "${review.text}" &mdash; ${review.author_name}`
             const div = document.createElement('div');
             div.appendChild(span);
             parent_div.appendChild(div);
